@@ -9,22 +9,24 @@ import numpy as np
 
 def calculate_distance(rA, rB):
     """Calculate the distance between points A and B.
-    
+
     Parameters
     ----------
     rA : numpy array
         The x, y, z coordinates of point A
     rB : numpy array
         The x, y, z coordinates of point B
-    
+
     Returns
     -------
     distance : float
         The distance between points A and B.
-    
+
     Examples
     --------
-    >>> calculate_distance(np.array([0, 0, 0], [0, 0.1, 0]))
+    >>> r1 = np.array([0, 0, 0])
+    >>> r2 = np.array([0, 0.1, 0])
+    >>> calculate_distance(r1, r2)
     0.1
     """
     dist_vec = (rA - rB)
@@ -34,7 +36,7 @@ def calculate_distance(rA, rB):
 
 def calculate_angle(rA, rB, rC, degrees=False):
     """Calculate angle between points A, B, and C
-    
+
     Parameters
     ----------
     rA : numpy array
@@ -43,7 +45,7 @@ def calculate_angle(rA, rB, rC, degrees=False):
         The x, y, z coordinates of point B
     degrees : bool, optional
         Return the calculated angle in degrees.
-    
+
     Returns
     -------
     angle : float
@@ -59,4 +61,3 @@ def calculate_angle(rA, rB, rC, degrees=False):
         return np.degrees(theta)
     else:
         return theta
-
