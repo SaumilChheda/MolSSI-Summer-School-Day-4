@@ -11,7 +11,6 @@ A python package for the MolSSI Software Summer School.
 
 Copyright (c) 2019, Saumil Chheda
 
-
 #### Acknowledgements
 
 Project based on the
